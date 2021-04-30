@@ -3,7 +3,7 @@ const userRouter = require('./user')
 const todoRouter = require('./todo')
 const authentication = require('../middlewares/authentication')
 
-router('/',(req, res)=>{
+router.get('/',(req, res)=>{
     res.send('todoapp server')
 })
 router.use(userRouter)
